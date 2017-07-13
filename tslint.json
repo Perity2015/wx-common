@@ -1,0 +1,17 @@
+{
+  "extends": "tslint:recommended",
+  "rules": {
+    "no-unused-variable": [
+      true,
+      "react"
+    ],
+    "trailing-comma": false,
+    "object-literal-sort-keys": false,
+    "quotemark": false,
+    "variable-name": false,
+    "no-var-requires": false,
+    "member-ordering": false,
+    "no-trailing-whitespace": false,
+    "curly": false
+  }
+}

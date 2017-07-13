@@ -1,0 +1,29 @@
+{
+  "name": "wx-common",
+  "version": "0.1.0",
+  "description": "common utils",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lib": "rimraf lib/ && tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Perity2015/wx-common.git"
+  },
+  "keywords": [
+    "utils"
+  ],
+  "author": "yuchao",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Perity2015/wx-common/issues"
+  },
+  "homepage": "https://github.com/Perity2015/wx-common#readme",
+  "devDependencies": {
+    "@types/lodash": "^4.14.65",
+    "lodash": "^4.17.4",
+    "rimraf": "^2.6.1",
+    "source-map-loader": "^0.2.1"
+  }
+}
