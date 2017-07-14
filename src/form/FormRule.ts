@@ -1,6 +1,7 @@
 import RegUtils from "../reg/RegUtils";
 
 const RULE_REQUIRED = {required: true, message: '必填'};
+const RULE_REQUIRED_MSG = (msg) => ( {required: true, message: msg});
 const RULE_INTEGER = {pattern: RegUtils.REG_INTEGER, message: '只能填写整数'};
 const RULE_POSITIVE_INTEGER = {pattern: RegUtils.REG_POSITIVE_INTEGER, message: '只能填写零或正整数'};
 const RULE_NOT_ZERO_POSITIVE_INTEGER = {pattern: RegUtils.REG_NOT_ZERO_POSITIVE_INTEGER, message: '只能填写正整数'};
@@ -16,6 +17,7 @@ const RULE_MAX = (ct) => ({
 
 const FormRule = {
     RULE_REQUIRED,
+    RULE_REQUIRED_MSG,
     RULE_INTEGER,
     RULE_POSITIVE_INTEGER,
     RULE_NOT_ZERO_POSITIVE_INTEGER,
