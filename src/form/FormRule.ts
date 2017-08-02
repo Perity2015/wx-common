@@ -10,6 +10,8 @@ const RULE_PHONE = {pattern: RegUtils.REG_MOBILE, message: '请填写正确的�
 const RULE_TEL = {pattern: RegUtils.REG_TEL, message: '请填写正确电话号码'};
 const RULE_DISCOUNT = {pattern: RegUtils.REG_DISCOUNT, message: '请填写正确的折扣'};
 const RULE_POSTAL_CODE = {pattern: RegUtils.REG_POSTAL_CODE, message: '请填写正确的邮政编码'};
+const RULE_EMAIL = {pattern: RegUtils.REG_EMAIL, message: '请填写正确的邮箱'};
+const RULE_URL = {pattern: RegUtils.REG_URL, message: '请填写正确的网址'};
 
 const RULE_MAX = (ct) => {
     return {
@@ -32,6 +34,8 @@ const FormRule = {
     RULE_TEL,
     RULE_DISCOUNT,
     RULE_POSTAL_CODE,
+    RULE_EMAIL,
+    RULE_URL,
     RULE_REQUIRED_MSG,
     RULE_MAX
 };

@@ -1,6 +1,6 @@
 {
   "name": "pekon-wx-common",
-  "version": "0.2.5",
+  "version": "0.2.6",
   "description": "common utils",
   "main": "index.js",
   "scripts": {
