@@ -1,46 +1,32 @@
 declare const require: any;
-
 const moment = require('moment');
 
-const FORMAT_DATE = 'YYYY-MM-DD';
+class DateUtils {
+    static FORMAT_DATE = 'YYYY-MM-DD';
+    static FORMAT_TIMESTAMP = 'x';
+    static FORMAT_DATETIME = 'YYYY-MM-DD HH:mm:ss';
+    static FORMAT_TIME = 'HH:mm:ss';
 
-const FORMAT_DATETIME = 'YYYY-MM-DD HH:mm:ss';
+    static getDateString(date) {
+        return moment(date).format(DateUtils.FORMAT_DATE);
+    }
 
-const FORMAT_TIME = 'HH:mm:ss';
+    static getDateTimeString(date) {
+        return moment(date).format(DateUtils.FORMAT_DATETIME);
+    }
 
-const FORMAT_TIMESTAMP = 'x';
+    static getTimeString(date) {
+        return moment(date).format(DateUtils.FORMAT_TIME);
+    }
 
-const getDateString = (date) => {
-    return moment(date).format(FORMAT_DATE);
-};
+    static getTimestamp(date) {
+        return parseInt(moment(date).format(DateUtils.FORMAT_TIMESTAMP));
+    }
 
-const getDateTimeString = (date) => {
-    return moment(date).format(FORMAT_DATETIME);
-};
-
-const getTimeString = (date) => {
-    return moment(date).format(FORMAT_TIME);
-};
-
-const getTimestamp = (date) => {
-    return parseInt(moment(date).format(FORMAT_TIMESTAMP));
-};
-
-const getCustomStr = (date, format) => {
-    return moment(date).format(format);
-};
-
-const DateUtils = {
-    FORMAT_DATE,
-    FORMAT_TIMESTAMP,
-    FORMAT_DATETIME,
-    FORMAT_TIME,
-    getDateString,
-    getDateTimeString,
-    getTimeString,
-    getTimestamp,
-    getCustomStr
-};
+    static getCustomStr(date, format) {
+        return moment(date).format(format);
+    }
+}
 
 export default DateUtils;
 

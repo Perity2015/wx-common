@@ -4,3 +4,4 @@
 /.gitignore
 /tsconfig.json
 /tslint.json
+*js.map
