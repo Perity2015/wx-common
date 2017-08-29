@@ -1,5 +1,6 @@
 export {default as FormRule} from './form/FormRule';
 export {default as FormLayout} from './form/FormLayout';
+export {default as FormBind} from './form/FormBind';
 export {default as RegUtils} from './reg/RegUtils';
 export {default as CookieUtils} from './cookie/CookieUtils';
 export {default as LogUtils} from './log/LogUtils';
