@@ -59,6 +59,27 @@ class FormRule {
     static RULE_REQUIRED_MSG(msg) {
         return {required: true, message: msg}
     }
+
+    static checkChineseLength = (rule, value, callback, length) => {
+        if (!value) {
+            callback();
+        }
+        let len = 0;
+        for (let i = 0; i < value.length; i++) {
+            let length = value.charCodeAt(i);
+            if (length >= 0 && length <= 128) {
+                len += 0.5;
+            }
+            else {
+                len += 1;
+            }
+        }
+        if (len > length) {
+            callback('超出限制汉字长度');
+        } else {
+            callback();
+        }
+    };
 }
 
 export default FormRule;
