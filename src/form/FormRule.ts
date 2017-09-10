@@ -19,7 +19,7 @@ class FormRule {
     };
     static RULE_TWO_BITS_POSITIVE_INTEGER = {
         pattern: RegUtils.REG_TWO_BITS_POSITIVE_INTEGER,
-        message: '只能填写正整数'
+        message: '最多两位正整数'
     };
     static RULE_TWO_BITS_DECIMALS = {
         pattern: RegUtils.REG_TWO_FRACTION,
@@ -55,6 +55,13 @@ class FormRule {
             max: ct, message: `最多可填写${ct}个字符`
         }
     }
+
+    static RULE_N_BITS_POSITIVE_INTEGER (n) {
+       return {
+           pattern: `^[1-9]{1}[0-9]{0,${n-1}$`,
+           message: `最多${n}位正整数`
+       }
+    };
 
     static RULE_REQUIRED_MSG(msg) {
         return {required: true, message: msg}
