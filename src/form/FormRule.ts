@@ -56,11 +56,11 @@ class FormRule {
         }
     }
 
-    static RULE_N_BITS_POSITIVE_INTEGER (n) {
-       return {
-           pattern: `^[1-9]{1}[0-9]{0,${n-1}}$`,
-           message: `最多${n}位正整数`
-       }
+    static RULE_N_BITS_POSITIVE_INTEGER(n) {
+        return {
+            pattern: new RegExp(`^[1-9]{1}[0-9]{0,${n-1}}$`),
+            message: `最多${n}位正整数`
+        }
     };
 
     static RULE_REQUIRED_MSG(msg) {
