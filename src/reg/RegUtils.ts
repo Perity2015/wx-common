@@ -38,6 +38,7 @@ class RegUtils {
     static REG_TWO_BITS_POSITIVE_INTEGER = /^[1-9]{1}[0-9]{0,1}$/;
     static REG_POSTAL_CODE = /^[1-9]{1}[0-9]{5}$/;
     static REG_TEL = /^([0-9]{3,4}-)?[0-9]{7,8}$/;
+    static REG_TEL_MOBILE = /^([0-9]{3,4}-)?[0-9]{7,8}|1[34578]\d{9}$/;
     static REG_EMAIL = /^([a-zA-Z0-9_-])+@([a-zA-Z0-9_-])+(.[a-zA-Z0-9_-])+/;
     static REG_URL = /^(((https|http|ftp|rtsp|mms):\/\/)?)+[A-Za-z0-9]+\.[A-Za-z0-9]+[\/=\?%\-&_~`@[\]\':+!]*([^<>\"\"])*$/;
 }

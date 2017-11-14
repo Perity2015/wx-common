@@ -29,6 +29,10 @@ class FormRule {
         pattern: RegUtils.REG_MOBILE,
         message: '请填写正确的手机号'
     };
+    static RULE_TEL_MOBILE = {
+        pattern: RegUtils.REG_TEL_MOBILE,
+        message: '请填写正确的号码'
+    };
     static RULE_TEL = {
         pattern: RegUtils.REG_TEL,
         message: '请填写正确电话号码'
